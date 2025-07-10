@@ -14,11 +14,16 @@
                 <h1>Bhargava Shoes</h1>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#products" onclick="closeMenu()">Products</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,22 +49,25 @@
                         <p>Under the leadership of Mr. Nakul Bhargava, we specialize in gents footwear, ladies footwear, sandals, sports shoes, and heavy chappals.</p>
                         <div class="features">
                             <div class="feature">
-                                <span class="feature-icon">✨</span>
+                                <div class="feature-icon experience"></div>
                                 <span>Over 100 Years of Experience</span>
                             </div>
                             <div class="feature">
-                                <span class="feature-icon">🏆</span>
+                                <div class="feature-icon quality"></div>
                                 <span>Quality Guaranteed</span>
                             </div>
                             <div class="feature">
-                                <span class="feature-icon">👥</span>
+                                <div class="feature-icon family"></div>
                                 <span>Family Business</span>
                             </div>
                         </div>
                     </div>
                     <div class="about-image">
                         <div class="image-placeholder">
-                            <span>🏪</span>
+                            <div class="store-illustration">
+                                <div class="building"></div>
+                                <div class="storefront"></div>
+                            </div>
                             <p>Our Store</p>
                         </div>
                     </div>
@@ -72,29 +80,29 @@
                 <h2>Our Products</h2>
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image-placeholder">
-                            <span>👞</span>
+                        <div class="product-image-placeholder mens">
+                            <div class="product-icon"></div>
                         </div>
                         <h3>Men's Footwear</h3>
                         <p>Formal shoes, casual shoes, sports shoes, heavy chappals</p>
                     </div>
                     <div class="product-card">
-                        <div class="product-image-placeholder">
-                            <span>👠</span>
+                        <div class="product-image-placeholder womens">
+                            <div class="product-icon"></div>
                         </div>
                         <h3>Women's Footwear</h3>
                         <p>Ladies sandals, elegant heels, comfortable flats, and boots</p>
                     </div>
                     <div class="product-card">
-                        <div class="product-image-placeholder">
-                            <span>👟</span>
+                        <div class="product-image-placeholder kids">
+                            <div class="product-icon"></div>
                         </div>
                         <h3>Children's Footwear</h3>
                         <p>Durable and comfortable shoes for growing feet</p>
                     </div>
                     <div class="product-card">
-                        <div class="product-image-placeholder">
-                            <span>🧽</span>
+                        <div class="product-image-placeholder accessories">
+                            <div class="product-icon"></div>
                         </div>
                         <h3>Accessories</h3>
                         <p>Shoe care products, insoles, and other accessories</p>
@@ -134,5 +142,28 @@
             <p>&copy; 2024 Bhargava Shoes. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('nav');
+            if (!nav.contains(event.target)) {
+                closeMenu();
+            }
+        });
+    </script>
 </body>
 </html>
