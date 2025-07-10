@@ -7,7 +7,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #fff;
+    background-color: #2c3548;
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: #2c3548;
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -31,9 +32,20 @@ header .container {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
 .logo h1 {
     font-size: 2rem;
-    color: #e74c3c;
+    color: #c44536;
 }
 
 nav ul {
@@ -50,11 +62,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #e74c3c;
+    color: #c44536;
 }
 
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3548 0%, #1a2332 100%);
     color: white;
     padding: 6rem 0;
     text-align: center;
@@ -72,7 +84,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #e74c3c;
+    background-color: #c44536;
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -82,19 +94,19 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #a53d2f;
 }
 
 .about {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: #1a2332;
 }
 
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #c44536;
 }
 
 .about p {
@@ -102,17 +114,19 @@ nav a:hover {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    color: #fff;
 }
 
 .products {
     padding: 4rem 0;
+    background-color: #2c3548;
 }
 
 .products h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #c44536;
 }
 
 .product-grid {
@@ -123,12 +137,13 @@ nav a:hover {
 }
 
 .product-card {
-    background: white;
+    background: #1a2332;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
     transition: transform 0.3s;
+    border: 1px solid #3a4a5c;
 }
 
 .product-card:hover {
@@ -136,21 +151,25 @@ nav a:hover {
 }
 
 .product-card h3 {
-    color: #2c3e50;
+    color: #c44536;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
+.product-card p {
+    color: #fff;
+}
+
 .contact {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: #1a2332;
 }
 
 .contact h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #c44536;
 }
 
 .contact-info {
@@ -160,26 +179,27 @@ nav a:hover {
 }
 
 .info-card {
-    background: white;
+    background: #2c3548;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
+    border: 1px solid #3a4a5c;
 }
 
 .info-card h3 {
-    color: #2c3e50;
+    color: #c44536;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .info-card p {
     margin-bottom: 0.5rem;
-    color: #666;
+    color: #fff;
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #1a2332;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -189,6 +209,19 @@ footer {
     header .container {
         flex-direction: column;
         gap: 1rem;
+    }
+    
+    .logo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
     }
     
     nav ul {
