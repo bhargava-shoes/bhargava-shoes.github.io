@@ -3,167 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhargava Shoes - Quality Footwear Store</title>
+    <title>Bhargava's Shoes - Premium Footwear Since 1911</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="Logo.png" alt="Bhargava Shoes Logo">
-                <h1>Bhargava Shoes</h1>
-            </div>
-            <nav>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 32C8 32 12 28 20 28C28 28 32 32 32 32V8C32 8 28 12 20 12C12 12 8 8 8 8V32Z" fill="currentColor"/>
+                            <path d="M8 32C8 32 12 28 20 28C28 28 32 32 32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <div class="logo-text">
+                        <span class="logo-primary">BHARGAVA'S</span>
+                        <span class="logo-secondary">SHOES</span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
-                    <li><a href="#about" onclick="closeMenu()">About</a></li>
-                    <li><a href="#products" onclick="closeMenu()">Products</a></li>
-                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-                </ul>
-            </nav>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#heritage" class="nav-link">Heritage</a>
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#visit" class="nav-link">Visit Us</a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Welcome to Bhargava Shoes</h2>
-                    <p>Your trusted destination for quality footwear</p>
-                    <a href="#contact" class="cta-button">Visit Our Store</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Our Heritage</h2>
-                        <p class="intro-text">Since 1911, Bhargava Shoes has been the cornerstone of quality footwear in Bathinda. Our century-long journey is built on trust, craftsmanship, and unwavering commitment to excellence.</p>
-                        <p>Located in the bustling heart of Sadar Bazaar, we have evolved from a small family business into the region's most trusted footwear destination. Under the expert guidance of Mr. Nakul Bhargava, we continue to uphold the traditions of quality and service that have defined us for over 100 years.</p>
-                        <div class="heritage-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">100+</div>
-                                <div class="stat-label">Years of Excellence</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1000+</div>
-                                <div class="stat-label">Happy Customers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">5000+</div>
-                                <div class="stat-label">Shoes Sold</div>
-                            </div>
-                        </div>
+                    <div class="hero-badge">
+                        <span>Est. 1911</span>
                     </div>
-                    <div class="about-image">
-                        <div class="image-placeholder">
-                            <div class="store-illustration">
-                                <div class="building"></div>
-                                <div class="storefront"></div>
-                            </div>
-                            <p>Our Store</p>
+                    <h1 class="hero-title">
+                        Crafting Excellence in 
+                        <span class="gradient-text">Footwear</span>
+                        for Over a Century
+                    </h1>
+                    <p class="hero-description">
+                        Discover premium quality shoes and unmatched craftsmanship at Bhargava's Shoes. 
+                        Four generations of expertise in the heart of Sadar Bazaar, Bathinda.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#visit" class="btn btn-primary">Visit Our Store</a>
+                        <a href="#collection" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&h=600&fit=crop&crop=center" alt="Premium leather shoes">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-cards">
+                        <div class="floating-card">
+                            <span class="card-number">100+</span>
+                            <span class="card-label">Years</span>
+                        </div>
+                        <div class="floating-card">
+                            <span class="card-number">1000+</span>
+                            <span class="card-label">Customers</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="products" class="products">
+        <section id="heritage" class="heritage">
             <div class="container">
-                <h2>Our Collection</h2>
-                <p class="section-subtitle">Discover our curated selection of premium footwear</p>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop&crop=center" alt="Men's Formal Shoes">
+                <div class="section-header">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">A Legacy Built on Trust & Craftsmanship</h2>
+                    <p class="section-description">
+                        Since 1911, Bhargava's Shoes has been synonymous with quality, trust, and exceptional service. 
+                        What started as a small family business has evolved into Bathinda's most trusted footwear destination.
+                    </p>
+                </div>
+                
+                <div class="heritage-grid">
+                    <div class="heritage-story">
+                        <h3>Four Generations of Excellence</h3>
+                        <p>
+                            Under the expert leadership of Mr. Nakul Bhargava, we continue to uphold the traditions 
+                            of quality and service that have defined our family business for over a century. Each pair 
+                            of shoes is selected with the same care and attention that our founders brought to this craft.
+                        </p>
+                        <div class="heritage-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Century of Trust</h4>
+                                    <p>Built relationships that span generations</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Quality Guarantee</h4>
+                                    <p>Every shoe meets our exacting standards</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Personal Service</h4>
+                                    <p>Individual attention for every customer</p>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Men's Footwear</h3>
-                        <p>Premium formal shoes, casual loafers, sports shoes, and traditional chappals</p>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=300&fit=crop&crop=center" alt="Women's Heels">
+                    
+                    <div class="heritage-visual">
+                        <div class="store-showcase">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=600&fit=crop&crop=center" alt="Traditional shoe store">
+                            <div class="showcase-overlay">
+                                <div class="showcase-badge">
+                                    <span>Since 1911</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Women's Footwear</h3>
-                        <p>Elegant heels, comfortable flats, stylish sandals, and designer boots</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400&h=300&fit=crop&crop=center" alt="Children's Sneakers">
-                        </div>
-                        <h3>Children's Footwear</h3>
-                        <p>Fun and durable shoes designed for active kids and growing feet</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=400&h=300&fit=crop&crop=center" alt="Shoe Care Products">
-                        </div>
-                        <h3>Accessories</h3>
-                        <p>Professional shoe care products, premium insoles, and leather conditioners</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="collection" class="collection">
             <div class="container">
-                <h2>Visit Our Store</h2>
-                <div class="contact-info">
-                    <div class="info-card">
+                <div class="section-header">
+                    <span class="section-tag">Premium Selection</span>
+                    <h2 class="section-title">Curated Collection</h2>
+                    <p class="section-description">
+                        Discover our carefully selected range of premium footwear, 
+                        from formal elegance to casual comfort.
+                    </p>
+                </div>
+
+                <div class="collection-grid">
+                    <div class="collection-card featured">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop&crop=center" alt="Men's Premium Footwear">
+                            <div class="card-badge">Featured</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Men's Premium Collection</h3>
+                            <p>Sophisticated formal shoes, comfortable loafers, and versatile casual options crafted for the modern gentleman.</p>
+                            <ul class="card-features">
+                                <li>Formal Oxford & Derby shoes</li>
+                                <li>Premium leather loafers</li>
+                                <li>Sports & casual footwear</li>
+                                <li>Traditional chappals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=300&fit=crop&crop=center" alt="Women's Elegant Footwear">
+                        </div>
+                        <div class="card-content">
+                            <h3>Women's Elegant Collection</h3>
+                            <p>Stylish heels, comfortable flats, and designer footwear for every occasion and lifestyle.</p>
+                            <ul class="card-features">
+                                <li>Designer heels & pumps</li>
+                                <li>Comfortable flats & sandals</li>
+                                <li>Fashion boots & ankle boots</li>
+                                <li>Casual & sports shoes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400&h=300&fit=crop&crop=center" alt="Children's Fun Footwear">
+                        </div>
+                        <div class="card-content">
+                            <h3>Children's Fun Collection</h3>
+                            <p>Durable, comfortable, and stylish shoes designed specifically for active, growing feet.</p>
+                            <ul class="card-features">
+                                <li>School & formal shoes</li>
+                                <li>Sports & play sneakers</li>
+                                <li>Sandals & casual wear</li>
+                                <li>Growth-friendly designs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=400&h=300&fit=crop&crop=center" alt="Premium Accessories">
+                        </div>
+                        <div class="card-content">
+                            <h3>Premium Care & Accessories</h3>
+                            <p>Professional shoe care products and accessories to maintain and enhance your footwear investment.</p>
+                            <ul class="card-features">
+                                <li>Leather care products</li>
+                                <li>Premium insoles & orthotics</li>
+                                <li>Shoe trees & accessories</li>
+                                <li>Professional cleaning kits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="experience-content">
+                    <div class="experience-text">
+                        <span class="section-tag">The Bhargava Experience</span>
+                        <h2>More Than Just Shoes</h2>
+                        <p>
+                            When you visit Bhargava's Shoes, you're not just purchasing footwear – you're experiencing 
+                            a century of tradition, expertise, and personalized service that has been passed down through 
+                            four generations of our family.
+                        </p>
+                        <div class="experience-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-label">Happy Customers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Years of Trust</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Premium Brands</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-visual">
+                        <div class="experience-image">
+                            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=500&h=400&fit=crop&crop=center" alt="Personalized shoe fitting service">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit" class="visit">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Visit Us</span>
+                    <h2 class="section-title">Experience Excellence in Person</h2>
+                    <p class="section-description">
+                        Visit our flagship store in the heart of Sadar Bazaar, Bathinda, and experience 
+                        our legendary personal service firsthand.
+                    </p>
+                </div>
+
+                <div class="visit-grid">
+                    <div class="visit-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                         <h3>Store Hours</h3>
-                        <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                        <p>Sunday: 11:00 AM - 6:00 PM</p>
+                        <div class="store-hours">
+                            <div class="hours-item">
+                                <span>Monday - Saturday</span>
+                                <span>10:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>11:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info-card">
+
+                    <div class="visit-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Our Location</h3>
+                        <div class="location-info">
+                            <p><strong>Bhargava's Shoes</strong></p>
+                            <p>Sadar Bazaar</p>
+                            <p>Bathinda, Punjab - 151001</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="visit-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06580 2.16708 8.43376 2.48353C8.80172 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.89391 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                         <h3>Contact Information</h3>
-                        <p>Proprietor: Mr. Nakul Bhargava</p>
-                        <p>Phone: +91 9041930007</p>
-                        <p>Business: Footwear Trading Company</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Location</h3>
-                        <p>Bhargava Shoes</p>
-                        <p>Sadar Bazar, Bathinda</p>
-                        <p>Punjab - 151001, India</p>
+                        <div class="contact-info">
+                            <p><strong>Mr. Nakul Bhargava</strong></p>
+                            <p>Proprietor</p>
+                            <p><a href="tel:+919041930007">+91 9041930007</a></p>
+                            <p>Footwear Trading Company</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Bhargava Shoes. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 32C8 32 12 28 20 28C28 28 32 32 32 32V8C32 8 28 12 20 12C12 12 8 8 8 8V32Z" fill="currentColor"/>
+                                <path d="M8 32C8 32 12 28 20 28C28 28 32 32 32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div class="logo-text">
+                            <span class="logo-primary">BHARGAVA'S</span>
+                            <span class="logo-secondary">SHOES</span>
+                        </div>
+                    </div>
+                    <p>Crafting excellence in footwear since 1911. Four generations of trust, quality, and personalized service.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <a href="#heritage">Our Heritage</a>
+                        <a href="#collection">Collection</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#visit">Visit Us</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Collections</h4>
+                        <a href="#collection">Men's Footwear</a>
+                        <a href="#collection">Women's Footwear</a>
+                        <a href="#collection">Children's Shoes</a>
+                        <a href="#collection">Accessories</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bhargava's Shoes. All rights reserved. Established 1911.</p>
+            </div>
         </div>
     </footer>
+
     <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            const hamburger = document.querySelector('.hamburger');
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
-        
-        function closeMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            const hamburger = document.querySelector('.hamburger');
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-        }
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const nav = document.querySelector('nav');
-            if (!nav.contains(event.target)) {
-                closeMenu();
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.collection-card, .heritage-story, .experience-text, .visit-card').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
